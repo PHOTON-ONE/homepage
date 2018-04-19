@@ -1,18 +1,20 @@
-import React { Component } from 'react';
+import React, { Component } from 'react';
 
-class Header extend Component {
+class Header extends Component {
 	constructor(props) {
-	super(props);	
+		super(props);	
 		this.state = {
-
+			logo: props.logo
 		}
 	}
 
 	render() {
-		return() {
-			
-		}
+		return 	<div className="header">
+					
+						<img className="logo" src={this.state.logo} />
+					
+				</div>;
 	}
 }
 
-export default {Header };
+export default Header;
