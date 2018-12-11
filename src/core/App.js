@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/styles.css';
 
-import { Header, Content } from '../components/index.js';
+import { Header, Content, Contact, Slideshow } from '../components/index.js';
 
 import logo from '../images/logo.png';
 
@@ -10,9 +10,16 @@ class App extends Component {
     return (
       <div className="body">
       	<Header logo={logo} />
-      	<Content>
-      	Test<br/>
-      	</Content>
+        <div className="container">
+          <Content />
+          <Slideshow />
+          <Contact />
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+        </div>
       </div>
     );
   }
